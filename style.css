@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* SITE PARA PEGAR ESSAS FONTS > fonts.google.com.br */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100vh; /* tamanho minimo do corpo vai ser de 100 % ou 100vh view Port height '' ALTURA''*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /* 10vw significa 10 % da View width largura */
+}
+
+header > p {
+    padding-bottom: 50px; /* < colocar um espaço para baixo */
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;  /* <<< tirar o 'sublinhado do link'' */
+    font-weight: bolder;
+
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    /* decorar o ''A'' de link com 'underline' _ */
+}
+
+
+section {
+    padding-top: 10vh;      /* Dar um distanciamento de 10% de cima para baixo de uma linha */
+    padding-bottom: 10vh;    /* Dar um distanciamento de 10% de baixo para cima de de linha */   
+    line-height: 2em;           /* dar um espaçamento de um linha pra outra*/
+    padding-left: 30px;         /* dar um paragrafo de 30px */
+    font-family: var(--fonte3);
+    font-size: 3.3vw;
+}
+section > p {
+    padding-bottom: 2em; /* dar um espaçamento pra baixo do paragrafo */
+}
+
+.texto { /* section > texto  usando essas cores colocando um fundo branco com letras pretas */
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgb(100, 100, 100); /* cor de fundo da section =  box */
+    color: white; /* cor Da Letras */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.158); /* colocar borda na ''box'' */
+    background-size: cover; /* imagem aparecer na seu melhor angulo */
+    background-attachment:fixed; /* background-attachment:fixed; =fixar imagem no fundo */
+
+
+    
+
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block; /* limitar o tamanho da Box, geralmente vai até o fim da tela de largura, usando isso,limita alguns centimetros das frases */
+    padding: 5px;
+    text-shadow: 2px 2px 0px black; /* sombras nas frases */
+}
+#i01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+    /* colocar imagem e da direita para o centro*/
+}
+
+#i02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    
+
+
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
